@@ -49,7 +49,7 @@ At least in the case of classical mechanics with $v(p_i) = p_i$, it is possible 
 However the rescaling changes the initial conditions in (1.2). Therefore the rescaling in position and time should instead be chosen so that the initial positions and velocities are of order 1.
 This simplifies our calculuation for such system.s 
 
-## References. 
+## References 
 
 1. [A review of the mean field limits for Vlasov
 equations by Pierre-Emmanuel Jabin](https://home.cscamm.umd.edu/~jabin/review_MF.pdf)
