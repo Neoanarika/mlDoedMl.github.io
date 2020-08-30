@@ -1,6 +1,6 @@
 # N-interacting Particles
 
-## Table of contents:
+## Table of contents
 
 1. TOC
 {:toc}
@@ -33,3 +33,24 @@ The function $E(Xi, X_j)$ is called the interaction kenerl. A simple interaction
 Another common interaction kernel is the the polynomial kernel where $F = A |x|^a− B|x|^b$  with $a, b ∈ R$ (possibly negative). The potential has an attractive part $−B |x|^b$ and a repulsive one $A|x|^a$. This kernel is a common choice for many life science applications, in particular swarming and flocking. Since interaction should be repulsive at short range because individuals try to avoid collisions but it is attractive at long range in order to keep the flock together. The kernel is also used in molecular physics when modelling the interaction between atoms forming a covalent bond the famous example being the lennard jones potential.
 
 ![](https://i.imgur.com/9PsxQzb.png)
+
+## Mean Field Scaling
+
+The mean field scaling consists in assuming that $λ ∼ 1/N$, that is in considering
+$$
+\begin{align}{
+    \frac{d x_i}{dt} = v(p_i) \\ 
+    \frac{d p_i}{dt} = \frac{1}{N} \sum_{j\neq i}F(x_i, x_j)
+}\end{align}
+$$
+
+At least in the case of classical mechanics with $v(p_i) = p_i$, it is possible to rescale in position and time and therefore in velocity or momentum. By choosing the scalings appropriately, it thus seems to be possible to reduce our original starting equations to the equations above. 
+
+However the rescaling changes the initial conditions in (1.2). Therefore
+the rescaling in position and time should instead be chosen so that the initial
+positions and velocities are of order 1.
+
+## References. 
+
+1. [A review of the mean field limits for Vlasov
+equations by Pierre-Emmanuel Jabin](https://home.cscamm.umd.edu/~jabin/review_MF.pdf)
