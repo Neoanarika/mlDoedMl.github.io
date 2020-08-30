@@ -7,69 +7,29 @@
 
 ## Basic problem setup
 
-Consider $N$ indistinguishable point particles, and denote by $x_i \in \mathbb{R}^n$ and $v_i ∈ \mathbb{R}^n$ the position and momentum of particle number i.
+Consider $N$ indistinguishable point particles, and denote by $x_i \in \mathbb{R}^n$ and $v_i ∈ \mathbb{R}^n$ the position and momentum of particle number $i$.
 
-In the classical case of Newton dynamics, the positions $x_i$, sometimes written as  $q_i$ to indicate generalise coordinate systems and momenta $p_i$ satisfy 
+In the Newton world, the positions $x_i$, sometimes written as  $q_i$ to indicate generalise coordinate systems and momenta $p_i$ satisfy 
 
 $$
-x_i
+\begin{align}{
+    \frac{d x_i}{dt} = v(p_i) \\ 
+    \frac{d p_i}{dt} = \lambda \sum_{j\neq i}F(x_i, x_j)
+}\end{align}
 $$
+> Note: Time is usually another parameter for the 2 odes above but I removed it for beravity and for our case it is sufficient to think in a time-indenpendent way first. 
 
-## Basic formatting
 
-You can use *italics*, **bold**, `code font text`, and create [links](https://www.markdownguide.org/cheat-sheet/). Here's a footnote [^1]. Here's a horizontal rule:
+along with some inital conditions $x_i(t=0) = u_i, p(t=0) = m_i$, it describe everything there is to know about a system. This means that given sufficiently enough accurate measurments of the inital conditions and knowledge about these equations a highly intelligently being could predict the future and see into the past like how we see the present. While this is impractical in reality due to quantum uncertainities, this ideas leads us to the concept of state. A state is a set of numbers that describe the system in this case $(x_i, p_i)$ repersent the state. If we know the state along with the equations above we can predict the future, at least in Netwon's world. This was first noticed by Laplace in the 17 hundreds. 
 
----
+## The Typical Setup Of Non-Interaction
 
-## Lists
+Typically these set of equations are simplified such that there isn't any $E(X_i, X_j)$ and instead the function $E(X_i, X_j)$ only depends on its current position and not the position of other particles i.e. $E(X_i, X_j) = E(X_i)$. This is often just called the potential function. Even this smiplified case we can derive useful models such as the ideal-gas law which is a sufficient approximation for most enginnering applications as long as we are not dealing with low temperatures or extreme pressures. 
 
-Here's a list:
+## The Atypical Setup Of Interaction
 
-- item 1
-- item 2
+The function $E(Xi, X_j)$ is called the interaction kenerl. A simple interaction kernel is the Poisson kernel, $F =C \frac{x}{|x|^n}$. This corresponds to particles under gravitational interaction for $C < 0$ or electrostatic interactions (ions in a plasma) for $C > 0$.
 
-And a numbered list:
+Another common interaction kernel is the the polynomial kernel where $F = A |x|^a− B|x|^b$  with $a, b ∈ R$ (possibly negative). The potential has an attractive part $−B |x|^b$ and a repulsive one $A|x|^a$. This kernel is a common choice for many life science applications, in particular swarming and flocking. Since interaction should be repulsive at short range because individuals try to avoid collisions but it is attractive at long range in order to keep the flock together. The kernel is also used in molecular physics when modelling the interaction between atoms forming a covalent bond the famous example being the lennard jones potential.
 
-1. item 1
-1. item 2
-
-## Boxes and stuff
-
-> This is a quotation
-
-{% include alert.html text="You can include alert boxes" %}
-
-...and...
-
-{% include info.html text="You can include info boxes" %}
-
-## Images
-
-![](/images/logo.png "fast.ai's logo")
-
-## Code
-
-General preformatted text:
-
-    # Do a thing
-    do_thing()
-
-Python code and output:
-
-```python
-# Prints '2'
-print(1+1)
-```
-
-    2
-
-## Tables
-
-| Column 1 | Column 2 |
-|-|-|
-| A thing | Another thing |
-
-## Footnotes
-
-[^1]: This is the footnote.
-
+![](https://i.imgur.com/9PsxQzb.png)
