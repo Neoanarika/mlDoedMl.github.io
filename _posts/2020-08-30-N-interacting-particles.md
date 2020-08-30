@@ -30,7 +30,7 @@ Typically these set of equations are simplified such that there isn't any $E(X_i
 
 The function $E(Xi, X_j)$ is called the interaction kenerl. A simple interaction kernel is the Poisson kernel, $F=C\frac{x}{x^n}$. This corresponds to particles under gravitational interaction for $C < 0$ or electrostatic interactions (ions in a plasma) for $C > 0$.
 
-Another common interaction kernel is the the polynomial kernel where $F = A{\mid x \mid}^a − B{\mid x\mid}^b$  with $a, b \in \mathbb{R}$ (possibly negative). The potential has an attractive part $− B{\mid x\mid}^b$ and a repulsive one $A{\mid x \mid}^a$. This kernel is a common choice for many life science applications, in particular swarming and flocking. Since interaction should be repulsive at short range because individuals try to avoid collisions but it is attractive at long range in order to keep the flock together. The kernel is also used in molecular physics when modelling the interaction between atoms forming a covalent bond the famous example being the lennard jones potential.
+Another common interaction kernel is the the polynomial kernel where $F = A{\mid x \mid}^a − B{\mid x\mid}^b$ .The kernel is also used in molecular physics when modelling the interaction between atoms forming a covalent bond the famous example being the lennard jones potential.
 
 ![](https://i.imgur.com/9PsxQzb.png)
 
