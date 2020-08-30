@@ -1,2 +1,4 @@
 
-# Welcome to my blog :) 
+# Home Page
+
+Welcome to my blog :)
