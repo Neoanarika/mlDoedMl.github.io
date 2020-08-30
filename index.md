@@ -1,4 +1,2 @@
 
-# Posts
-
-I hope you learn something as I did writing these. 
+# Welcome to my blog :) 
