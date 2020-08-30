@@ -14,6 +14,8 @@ github_username: neoanarika
 email: angmingliang4017ic@gmail.com
 twitter_username: neoanarika
 
+rss: true
+
 # Set this to true to get LaTeX math equation support
 use_math: true
 
