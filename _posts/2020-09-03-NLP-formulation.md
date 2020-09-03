@@ -108,7 +108,9 @@
 
   Example of this a local minister would be the function $f(x) = x^4 - x^3 - 3x^3 +3$, when $x \approx -0.906$ it is a local minimiser. 
 
-  ![Screenshot 2020-09-03 at 10.18.48 AM](/Users/mingliangang/Desktop/Screenshot 2020-09-03 at 10.18.48 AM.png)
+  ![](https://i.imgur.com/jffhmB4.png)
+
+  
 
   ## Important theorems in NLP
 
@@ -122,7 +124,7 @@
 
   #### Bounded Set
 
-  Let $S \subseteq \mathbb{R}^n$ be a bounded nonempty set. The set $S$ is said to be bounded if there is a positive number M such that $||X|| \leq M \quad \forall x \in S$. That means that it has an upper and a lower bound. Then M is the maximum of the absolute value of the 2 bounds. We can hence see a ball and an interval are both examples of a bounded set as they both have some upper and lower bound for their set. 
+  Let $S \subseteq \mathbb{R}^n$ be a bounded nonempty set. The set $S$ is said to be bounded if there is a positive number M such that $\|X\| \leq M \quad \forall x \in S$. That means that it has an upper and a lower bound. Then M is the maximum of the absolute value of the 2 bounds. We can hence see a ball and an interval are both examples of a bounded set as they both have some upper and lower bound for their set. 
 
   Another interesting to see is that the union of 2 bounded sets is another bounded set. A similar remark can be said about the intersection of a bounded set. Consider the 1-dimensional case of an interval to see the intution. 
 
