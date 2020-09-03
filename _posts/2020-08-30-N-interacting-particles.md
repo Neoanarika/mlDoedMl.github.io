@@ -34,6 +34,11 @@ Another common interaction kernel is the the polynomial kernel where $F = A{\mid
 
 ![](https://i.imgur.com/9PsxQzb.png)
 
+There are 2 interesting extensions here 
+
+- Mean field scaling
+- Learnt Interaction Kernel
+
 ## Mean Field Scaling
 
 The mean field scaling consists in assuming that $λ ∼ 1/N$, that is in considering
@@ -46,8 +51,11 @@ $$
 
 At least in the case of classical mechanics with $v(p_i) = p_i$, it is possible to rescale in position and time and therefore in velocity or momentum. By choosing the scalings appropriately, it thus seems to be possible to reduce our original starting equations to the equations above. 
 
-However the rescaling changes the initial conditions in (1.2). Therefore the rescaling in position and time should instead be chosen so that the initial positions and velocities are of order 1.
-This simplifies our calculuation for such system.s 
+However the rescaling changes the initial conditions in (1.2). Therefore the rescaling in position and time should instead be chosen so that the initial positions and velocities are of order 1. This simplifies our calculuation for such system. 
+
+## Interaction Kernel
+
+The second possible extensions is can we learn the interaction kernel $F(x_i, x_j)$ ? Maybe ? This is something I am still exploring there are some recent papers on the topic of learning pairwise kernels and how to model them that I am still reading on so I will talk more about it in a future blog post. 
 
 ## References 
 
