@@ -142,9 +142,11 @@
 
   **Take note**: This is not to be confused for talyor expansion note this is an acutal equality not an inequality. 
 
-  It turns out if the hessian $H_f(w)$ is positive semi-definite for $x*$ i.e. $\forall x \in \mathbb{R} \quad x^TH_f(w)x \geq 0$ then we see very clearly that $f(y) \geq f(x^*) + \nabla f(x^*)^T(y-x)$ and if $x^*$ is a stationary point (i.e. $\nabla f(x^*)^T(y-x)$)we immediately see that $\forall y\in \mathbb{R} f(y) \geq f(x^*)$
+  It turns out if the hessian $H_f(w)$ is positive semi-definite for $x^*$ i.e. $\forall x \in \mathbb{R} \quad x^TH_f(w)x \geq 0$ then we see very clearly that $f(y) \geq f(x^*) + \nabla f(x^*)^T(y-x)$ and if $x^*$ is a stationary point (i.e. $\nabla f(x^*)^T(y-x)$)we immediately see that $\forall y\in \mathbb{R} f(y) \geq f(x^*)$
 
-  > For a point $x*$ with a of a function with a positive semi-definite hessian and stationary point at $x*$ it is a global optima. 
+  > For a point $x^*$ with a of a function with a positive semi-definite hessian and stationary point at $x^*$ it is a global optima. 
+
+  
 
   #### A word about positive semi-definite matrices 
 
